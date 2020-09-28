@@ -13,7 +13,7 @@ services:
       - "3333:3333"
       - "8080:8080"
     environment:
-      - BOT_NAME=heyburrito
+      - BOT_NAME=burritobot
       - DATABASE_DRIVER=mongodb
       - MONGODB_URL=mongodb://mongodb:27017
       - MONGODB_DATABASE=heyburrito
@@ -21,5 +21,6 @@ services:
       - "SLACK_EMOJI_INC=:burrito:"
       - "SLACK_EMOJI_INC=:rottenburrito:"
       - SLACK_DAILY_CAP=5
+      - DISABLE_EMOJI_DEC=true
     links:
       - mongodb
