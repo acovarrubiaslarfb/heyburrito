@@ -24,3 +24,4 @@ services:
       - DISABLE_EMOJI_DEC=true
     links:
       - mongodb
+docker-compose up -d
